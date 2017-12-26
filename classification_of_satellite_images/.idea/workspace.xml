@@ -40,11 +40,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="10-smote.ipynb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="10-smote.ipynb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/10-smote.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="6" />
+              <selected id="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="11-minimize-class.ipynb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/11-minimize-class.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="4" />
             </state>
           </provider>
         </entry>
@@ -53,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="397">
+              <first_editor relative-caret-position="2786">
                 <caret line="199" column="36" lean-forward="false" selection-start-line="199" selection-start-column="36" selection-end-line="199" selection-end-column="36" />
                 <folding />
               </first_editor>
@@ -92,6 +101,7 @@
         <option value="$PROJECT_DIR$/08-bagging.ipynb" />
         <option value="$PROJECT_DIR$/10-smote.ipynb" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/11-minimize-class.ipynb" />
       </list>
     </option>
   </component>
@@ -228,13 +238,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/08-bagging.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/train01.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -570,6 +573,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/10-smote.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="524">
@@ -579,7 +589,7 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="397">
+          <first_editor relative-caret-position="2786">
             <caret line="199" column="36" lean-forward="false" selection-start-line="199" selection-start-column="36" selection-end-line="199" selection-end-column="36" />
             <folding />
           </first_editor>
@@ -587,10 +597,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10-smote.ipynb">
+    <entry file="file://$PROJECT_DIR$/11-minimize-class.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="5" />
+          <selected id="4" />
         </state>
       </provider>
     </entry>
