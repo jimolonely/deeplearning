@@ -147,5 +147,40 @@ synthetic minority over-sampling technique(SMOTE)
 
 ## 1.使用Bagging
 
+先按照顺序将1类数据分成4份,然后分别查看其精确度
+```python
+# 提取出类别为1的数据
+X_1 = np.array([list(X[i]) for i in range(len(y)) if y[i] == 1])
+y_1 = np.array([y[i] for i in range(len(y)) if y[i] == 1])
+print(X_1.shape[0], y_1.shape[0])
+# 提取出类别不为1的数据
+X_n1 = np.array([list(X[i]) for i in range(len(y)) if y[i] != 1])
+y_n1 = np.array([y[i] for i in range(len(y)) if y[i] != 1])
+print(len(X_n1), len(y_n1))
+
+al = int(len(X_1) / 4)
+gnb = GaussianNB()
+for i in range(4):
+    xt1 = X_1[i * al:(i + 1) * al, :]
+    yt1 = y_1[i * al:(i + 1) * al]
+    X_temp = np.concatenate((xt1, X_n1), axis=0)
+    y_temp = np.concatenate((yt1, y_n1), axis=0)
+    # print(temp.shape)
+    y_pred = gnb.fit(X_temp, y_temp).predict(X_test)
+    
+    # 记录每个结果,最后会评比
+    
+    acc = metrics.accuracy_score(y_test, y_pred)
+    print(acc)
+
+```
+最后结果:可看出前面的数据更准确
+```
+0.71
+0.7
+0.62
+0.586666666667
+```
+现在将1类数据打乱,再执行上述过程:
 
 
