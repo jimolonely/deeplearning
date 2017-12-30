@@ -138,6 +138,12 @@ plt.show()
 
 论文地址: [https://www.jair.org/media/953/live-953-2037-jair.pdf](https://www.jair.org/media/953/live-953-2037-jair.pdf)
 ```
+题目:SMOTE: Synthetic Minority Over-sampling Technique 
+期刊:Journal of Artificial Intelligence Research 16 (2002) 321–357
+作者:Nitesh V. Chawla,Kevin W. Bowyer,Lawrence O. Hall,W. Philip Kegelmeyer
+```
+
+```
 synthetic minority over-sampling technique(SMOTE)
 基本思想是:从少数类中把一个数据子集作为一个实例取走，接着创建相似的新合成的实例。
 这些合成的实例接着被添加进原来的数据集。新数据集被用作样本以训练分类模型。
@@ -148,8 +154,12 @@ synthetic minority over-sampling technique(SMOTE)
 上面都是通过重采样来处理不平衡,结合本题,如果使用过采样,我们需要对另外5个类都增加数据.
 下面还有一些集成技术.
 
-[http://scikit-learn.org/stable/modules/ensemble.html](http://scikit-learn.org/stable/modules/ensemble.html)
-
+参考
+```
+标题:Ensemble methods
+作者:scikit learn官网
+网址:http://scikit-learn.org/stable/modules/ensemble.html
+```
 1. Bagging
 ```
 生成多个个不同替换的引导训练样本，并分别训练每个自举算法上的算法，然后再聚合预测.
@@ -257,7 +267,13 @@ plt.show()
 
 ## 2.使用重采样技术
 
-[技术文档](http://contrib.scikit-learn.org/imbalanced-learn/stable/api.html#module-imblearn.combine)
+[技术文档]
+(http://contrib.scikit-learn.org/imbalanced-learn/stable/api.html#module-imblearn.combine)
+```
+标题:imbalanced-learn API
+作者:Guillaume  Lema,Fernando Nogueira, Christos K. Aridas
+网址:http://contrib.scikit-learn.org/imbalanced-learn/stable/api.html#module-imblearn.combine
+```
 
 ### 2.1 SMOTE
 ```python
@@ -350,7 +366,7 @@ acc = metrics.accuracy_score(y_test, y_pred)
 print(acc)
 print(metrics.confusion_matrix(y_test, y_pred))
 
-# 结合降采样和过采样
+# SMOTE
 
 X_resampled, y_resampled = SMOTE().fit_sample(x_train, y_train)
 print(sorted(Counter(y_resampled).items()))
@@ -412,7 +428,7 @@ acc = metrics.accuracy_score(y_test, y_pred)
 print(acc)
 print(metrics.confusion_matrix(y_test, y_pred))
 
-# 结合降采样和过采样
+# SMOTE
 
 X_resampled, y_resampled = SMOTE().fit_sample(x_train, y_train)
 print(sorted(Counter(y_resampled).items()))
@@ -468,7 +484,7 @@ acc = metrics.accuracy_score(y_test, y_pred)
 print(acc)
 print(metrics.confusion_matrix(y_test, y_pred))
 
-# 结合降采样和过采样
+# SMOTE
 
 X_resampled, y_resampled = SMOTE().fit_sample(x_train, y_train)
 print(sorted(Counter(y_resampled).items()))
@@ -496,11 +512,33 @@ print(metrics.confusion_matrix(y_test, y_pred))
 
 ## 4.结果对比
 
+6个类
 
+![003](./image/003.png)
+
+5个类
+
+![004](./image/004.png)
+
+4个类
+
+![005](./image/005.png)
+
+总的结果对比
+
+![006](./image/006.png)
 
 # 参考文献
-[http://scikit-learn.org/stable/modules/naive_bayes.html](http://scikit-learn.org/stable/modules/naive_bayes.html)
 
-[https://matplotlib.org/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py](https://matplotlib.org/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py)
+其他文献:
 
+```
+标题:naive_bayes
+作者:scikit learn官网
+网址:http://scikit-learn.org/stable/modules/naive_bayes.html
+
+标题:pyplot
+作者:matplot官网
+网址:https://matplotlib.org/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py
+```
 
