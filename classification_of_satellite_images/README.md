@@ -494,8 +494,13 @@ print(metrics.confusion_matrix(y_test, y_pred))
  [12 24]]
 ```
 
-# 数据可视化
-蓝色是测试数据,黄色是训练数据,y轴是类别,x轴是max值
+## 4.结果对比
 
-![001](./image/001.png)
+
+
+# 参考文献
+[http://scikit-learn.org/stable/modules/naive_bayes.html](http://scikit-learn.org/stable/modules/naive_bayes.html)
+
+[https://matplotlib.org/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py](https://matplotlib.org/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py)
+
 
